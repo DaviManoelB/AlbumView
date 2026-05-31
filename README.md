@@ -14,6 +14,7 @@
  - Pesquisar álbuns: Utilizar a barra de pesquisa para buscar os álbuns cadastrados no site pelo seu nome. Caso não encontre, um alerta avisa ao usuário que o álbum ainda não foi cadastrado. Não diferencia letras maiúsculas de minúsculas.
  - Álbum aleatório: A função mais única do site. Utiliza de gerador de números aleátórios em JS para gerar um número dentre os IDs existentes nos álbuns para abrir detalhes de qualquer álbum cadastrado.
  - Carrossel: Um carrosel feito a partir do Bootstrap, exibindo 3 álbuns quaisquer cadastrados no Json Server, com botão para direcionar a tela de detalhes sobre o álbum.
+ - Resposividade com diferentes dispositivos. Desktop, tablets e celulares.
 
  ## Implementações Futuras
  - Cadastro de usuários. Atualmente não exite tela de login nem nenhuma forma de diferenciar os usuários.
