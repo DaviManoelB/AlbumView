@@ -1,0 +1,411 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "nome": "Davi",
+      "email": "davi@email.com"
+    },
+    {
+      "id": 1,
+      "nome": "Anabel",
+      "email": "amabel@email.com"
+    }
+  ],
+  "albums": [
+    {
+      "nome": "Thriller",
+      "artista": "Michael Jackson",
+      "ano": "1982",
+      "numMusica": "9",
+      "genero": "Pop",
+      "fav": "1",
+      "capa": "assets/images/album/thriller.jpg",
+      "musicas": [
+        {
+          "nome": "Wanna Be Startin' Somethin'"
+        },
+        {
+          "nome": "Baby Be Mine"
+        },
+        {
+          "nome": "The Girl Is Mine"
+        },
+        {
+          "nome": "Thriller"
+        },
+        {
+          "nome": "Beat It"
+        },
+        {
+          "nome": "Billie Jean"
+        },
+        {
+          "nome": "Human Nature"
+        },
+        {
+          "nome": "P.Y.T."
+        },
+        {
+          "nome": "The Lady in My Life"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "nome": "Back in Black",
+      "artista": "AC/DC",
+      "ano": "1980",
+      "numMusica": "10",
+      "genero": "Rock",
+      "fav": "0",
+      "capa": "assets/images/album/backInBlack.jpg",
+      "musicas": [
+        {
+          "nome": "Hells Bells"
+        },
+        {
+          "nome": "Shoot to Thrill"
+        },
+        {
+          "nome": "Back in Black"
+        },
+        {
+          "nome": "You Shook Me All Night Long"
+        },
+        {
+          "nome": "Rock and Roll Ain't Noise Pollution"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nome": "21",
+      "artista": "Adele",
+      "ano": "2011",
+      "numMusica": "11",
+      "genero": "Pop",
+      "fav": "0",
+      "capa": "assets/images/album/21.jpg",
+      "musicas": [
+        {
+          "nome": "Rolling in the Deep"
+        },
+        {
+          "nome": "Rumour Has It"
+        },
+        {
+          "nome": "Turning Tables"
+        },
+        {
+          "nome": "Someone Like You"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "nome": "Nevermind",
+      "artista": "Nirvana",
+      "ano": "1991",
+      "numMusica": "12",
+      "genero": "Grunge",
+      "fav": "0",
+      "capa": "assets/images/album/nevermind.jpg",
+      "musicas": [
+        {
+          "nome": "Smells Like Teen Spirit"
+        },
+        {
+          "nome": "In Bloom"
+        },
+        {
+          "nome": "Come as You Are"
+        },
+        {
+          "nome": "Lithium"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "nome": "Random Access Memories",
+      "artista": "Daft Punk",
+      "ano": "2013",
+      "numMusica": "13",
+      "genero": "Eletrônica",
+      "fav": "1",
+      "capa": "assets/images/album/ram.jpg",
+      "musicas": [
+        {
+          "nome": "Give Life Back to Music"
+        },
+        {
+          "nome": "Get Lucky"
+        },
+        {
+          "nome": "Instant Crush"
+        },
+        {
+          "nome": "Lose Yourself to Dance"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "id": 6,
+      "nome": "to hell with it",
+      "artista": "PinkPantheress",
+      "ano": "2021",
+      "numMusica": "10",
+      "genero": "Indie Pop",
+      "fav": "1",
+      "capa": "assets/images/album/toHellWithIt.jpg",
+      "musicas": [
+        {
+          "nome": "Pain"
+        },
+        {
+          "nome": "I Must Apologise"
+        },
+        {
+          "nome": "Last Valentines"
+        },
+        {
+          "nome": "Passion"
+        }
+      ]
+    },
+    {
+      "nome": "Sweet Boy",
+      "artista": "Malcolm Todd",
+      "ano": "2024",
+      "numMusica": "16",
+      "genero": "Pop",
+      "fav": "1",
+      "capa": "assets/images/album/sweetBoy.jpg",
+      "musicas": [
+        {
+          "nome": "Earrings"
+        },
+        {
+          "nome": "Roommates"
+        },
+        {
+          "nome": "On My Shoulder"
+        },
+        {
+          "nome": "Thailand"
+        },
+        {
+          "nome": "Ladygirl"
+        },
+        {
+          "nome": "Sweet Boy"
+        },
+        {
+          "nome": "Rodrick Rules"
+        },
+        {
+          "nome": "4Me 4Me"
+        },
+        {
+          "nome": "Art House"
+        },
+        {
+          "nome": "Sore Throat"
+        },
+        {
+          "nome": "Rockstar Boyfriend"
+        },
+        {
+          "nome": "New Friends"
+        },
+        {
+          "nome": "Accutane"
+        },
+        {
+          "nome": "Hot in NY"
+        },
+        {
+          "nome": "Pillow"
+        },
+        {
+          "nome": "Mr.Incorret"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "nome": "6 Feet Beneath the Moon",
+      "artista": "King Krule",
+      "ano": "2013",
+      "numMusica": "14",
+      "genero": "Punk Jazz",
+      "fav": "1",
+      "capa": "assets/images/album/6feet.jpg",
+      "musicas": [
+        {
+          "nome": "Easy Easy"
+        },
+        {
+          "nome": "Border Line"
+        },
+        {
+          "nome": "Has This Hit?"
+        },
+        {
+          "nome": "Foreign 2"
+        },
+        {
+          "nome": "Ceiling"
+        },
+        {
+          "nome": "Baby Blue"
+        },
+        {
+          "nome": "Cementality"
+        },
+        {
+          "nome": "A Lizard State"
+        },
+        {
+          "nome": "Will I Come"
+        },
+        {
+          "nome": "Ocean Bed"
+        },
+        {
+          "nome": "Neptune Estate"
+        },
+        {
+          "nome": "The Krockadile"
+        },
+        {
+          "nome": "Out Getting Ribs"
+        },
+        {
+          "nome": "Bathed in Gray"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "nome": "The Gaping Mouth",
+      "artista": "Lowertown",
+      "ano": "2021",
+      "numMusica": "7",
+      "genero": "Indie",
+      "fav": "0",
+      "capa": "assets/images/album/gapingMouth.jpg",
+      "musicas": [
+        {
+          "nome": "Clown Car"
+        },
+        {
+          "nome": "Seaface"
+        },
+        {
+          "nome": "The gaping Mouth"
+        },
+        {
+          "nome": "Burn On My Own"
+        },
+        {
+          "nome": "Debris"
+        },
+        {
+          "nome": "Grass Stains"
+        },
+        {
+          "nome": "Sunburnt"
+        }
+      ],
+      "id": 9
+    }
+  ],
+  "artista": [
+    {
+      "nome": "Michael Jackson",
+      "vizualizacoes": "2200000000",
+      "foto": "assets/images/artista/michaelJackson.jpg",
+      "sobre": "Michael Jackson foi um cantor, compositor e dançarino norte-americano conhecido como o Rei do Pop. Seu impacto na música, dança e cultura pop marcou gerações com sucessos como Thriller, Billie Jean e Beat It.",
+      "id": 1
+    },
+    {
+      "nome": "Adele",
+      "vizualizacoes": "9000",
+      "foto": "assets/images/artista/adele.jpg",
+      "sobre": "Adele é uma cantora e compositora britânica famosa por sua voz poderosa e músicas emocionantes. Seus álbuns quebraram recordes mundiais com sucessos como Someone Like You e Rolling in the Deep.",
+      "id": 2
+    },
+    {
+      "nome": "PinkPantheress",
+      "vizualizacoes": "1700000",
+      "foto": "assets/images/artista/pinkPantheress.jpg",
+      "sobre": "PinkPantheress é uma cantora e produtora britânica conhecida por misturar pop, drum and bass e música eletrônica em faixas curtas e virais. Seu estilo moderno conquistou grande destaque nas redes sociais.",
+      "id": 3
+    },
+    {
+      "nome": "Malcolm Todd",
+      "vizualizacoes": "170000000",
+      "foto": "assets/images/artista/malcomTodd.jpg",
+      "sobre": "Malcolm Todd é um cantor e compositor norte-americano que ganhou popularidade com músicas de indie pop e bedroom pop. Seu estilo combina letras pessoais com produções suaves e modernas.",
+      "id": 4
+    },
+    {
+      "nome": "The Weeknd",
+      "vizualizacoes": "180000",
+      "foto": "assets/images/artista/theWeeknd.jpg",
+      "sobre": "The Weeknd é um cantor canadense de R&B e pop conhecido por sua voz marcante e estética sombria. Ele alcançou sucesso mundial com músicas como Blinding Lights e Save Your Tears.",
+      "id": 5
+    },
+    {
+      "nome": "Bad Bunny",
+      "vizualizacoes": "22000000",
+      "foto": "assets/images/artista/badBunny.jpg",
+      "sobre": "Bad Bunny é um cantor porto-riquenho que revolucionou o reggaeton e a música latina moderna. Seu estilo mistura trap latino, reggaeton e pop em sucessos internacionais.",
+      "id": 7
+    },
+    {
+      "nome": "Eminem",
+      "vizualizacoes": "1700000000",
+      "foto": "assets/images/artista/eminen.jpg",
+      "sobre": "Eminem é um rapper, compositor e produtor norte-americano considerado um dos maiores artistas do rap. Conhecido por suas letras rápidas e impactantes, lançou clássicos como Lose Yourself e Stan.",
+      "id": 8
+    },
+    {
+      "nome": "Daft Punk",
+      "vizualizacoes": "2200000",
+      "foto": "assets/images/artista/daftPunk.jpg",
+      "sobre": "Daft Punk foi uma dupla francesa de música eletrônica conhecida pelos capacetes robóticos e pelo som inovador. O grupo marcou a música eletrônica com álbuns como Random Access Memories.",
+      "id": 9
+    },
+    {
+      "nome": "AC/DC",
+      "vizualizacoes": "450000",
+      "foto": "assets/images/artista/acDc.jpg",
+      "sobre": "AC/DC é uma banda australiana de rock formada nos anos 70 e conhecida por riffs marcantes e apresentações energéticas. Tornou-se uma das maiores bandas de hard rock da história.",
+      "id": 10
+    },
+    {
+      "nome": "Nirvana",
+      "vizualizacoes": "450000",
+      "foto": "assets/images/artista/nirvana.jpg",
+      "sobre": "Nirvana é uma banda americana de rock alternativo formada nos anos 90. Conhecida por seu som distorcido e letras emocionantes, a banda marcou a música com álbuns como Nevermind.",
+      "id": 11
+    },
+    {
+      "nome": "King Krule",
+      "vizualizacoes": "1000000",
+      "foto": "assets/images/artista/kingKrule.jpg",
+      "sobre": "King Krule é um músico britânico conhecido por seu estilo único que combina punk, jazz e soul. Seu álbum '6 Feet Beneath the Moon' recebeu elogios pela originalidade e profundidade emocional.",
+      "id": 12
+    },
+    {
+      "nome": "Lowertown",
+      "vizualizacoes": "100000",
+      "foto": "assets/images/artista/lowertown.jpg",
+      "sobre": "Lowertown é uma banda americana de indie rock conhecida por suas letras introspectivas e sonoridade melancólica. O grupo ganhou destaque com seu álbum de estreia 'I Love to Lie'.",
+      "id": 13
+    }
+  ]
+}
