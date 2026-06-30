@@ -15,6 +15,8 @@ async function carregarDados() {
     carregaArtista();
     carregaCarousel();
     carregaAlbumDetalhes();
+    carregaTabelaAlbums();
+    configurarFormularioCrud();
 
   } catch (erro) {
       console.error("Erro ao carregar a API:", erro);
@@ -274,3 +276,231 @@ function carregaArtistaDetalhe(album) {
   }
 }
 window.addEventListener("DOMContentLoaded", carregarDados);
+
+async function carregaTabelaAlbums() {
+
+    const tabela = document.getElementById("tabelaAlbums");
+
+    if (!tabela) return;
+
+    try {
+
+        const resposta = await fetch("http://localhost:3000/albums");
+        const albumsCrud = await resposta.json();
+
+        tabela.innerHTML = "";
+
+        albumsCrud.forEach(album => {
+
+            tabela.innerHTML += `
+                <tr>
+                    <td>${album.id}</td>
+                    <td>${album.nome}</td>
+                    <td>${album.artista}</td>
+                    <td>${album.ano}</td>
+                    <td>${album.genero}</td>
+
+                    <td>
+
+                        <button
+                            class="btn btn-sm btn-editar"
+                            onclick="editarAlbum(${album.id})">
+                            Editar
+                        </button>
+
+                        <button
+                            class="btn btn-sm btn-excluir"
+                            onclick="excluirAlbum(${album.id})">
+                            Excluir
+                        </button>
+
+                    </td>
+
+                </tr>
+            `;
+        });
+
+    } catch (erro) {
+
+        console.error("Erro ao carregar tabela:", erro);
+
+    }
+}
+
+function configurarFormularioCrud() {
+
+    const formulario = document.getElementById("formCadastro");
+
+    if (!formulario) return;
+
+    formulario.addEventListener("submit", salvarAlbum);
+}
+
+async function salvarAlbum(event) {
+
+    event.preventDefault();
+
+    const id = document.getElementById("albumId").value;
+
+    const album = {
+
+        nome: document.getElementById("nomeAlbum").value,
+        artista: document.getElementById("artistaAlbum").value,
+        ano: document.getElementById("anoAlbum").value,
+        genero: document.getElementById("generoAlbum").value,
+        numMusica: document.getElementById("numMusicaAlbum").value,
+        capa: document.getElementById("capaAlbum").value,
+
+        fav: "0",
+
+        musicas: document
+        .getElementById("musicasAlbum")
+        .value
+        .split(";")
+        .map(musica => ({
+            nome: musica.trim()
+        }))
+        .filter(musica => musica.nome !== "")
+
+    };
+
+    try {
+
+        if (id === "") {
+
+            await fetch("http://localhost:3000/albums", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(album)
+
+            });
+
+            alert("Álbum cadastrado com sucesso!");
+
+        } else {
+
+            album.id = Number(id);
+
+            await fetch(`http://localhost:3000/albums/${id}`, {
+
+                method: "PUT",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(album)
+
+            });
+
+            alert("Álbum atualizado com sucesso!");
+        }
+
+        limparFormulario();
+
+        await carregarDados();
+
+    } catch (erro) {
+
+        console.error("Erro ao salvar álbum:", erro);
+
+    }
+}
+
+async function editarAlbum(id) {
+
+    try {
+
+        const resposta = await fetch(
+            `http://localhost:3000/albums/${id}`
+        );
+
+        const album = await resposta.json();
+
+        document.getElementById("albumId").value = album.id;
+
+        document.getElementById("nomeAlbum").value =
+            album.nome;
+
+        document.getElementById("artistaAlbum").value =
+            album.artista;
+
+        document.getElementById("anoAlbum").value =
+            album.ano;
+
+        document.getElementById("generoAlbum").value =
+            album.genero;
+
+        document.getElementById("numMusicaAlbum").value =
+            album.numMusica;
+
+        document.getElementById("capaAlbum").value =
+            album.capa;
+
+        document.getElementById("musicasAlbum").value =
+            album.musicas.map(musica => musica.nome).join("; ");
+
+        document.getElementById(
+            "tituloFormulario"
+        ).textContent = "Editar Álbum";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    } catch (erro) {
+
+        console.error("Erro ao editar álbum:", erro);
+
+    }
+}
+
+async function excluirAlbum(id) {
+
+    const confirmar = confirm(
+        "Deseja realmente excluir este álbum?"
+    );
+
+    if (!confirmar) return;
+
+    try {
+
+        await fetch(
+            `http://localhost:3000/albums/${id}`,
+            {
+                method: "DELETE"
+            }
+        );
+
+        alert("Álbum removido!");
+
+        await carregarDados();
+
+    } catch (erro) {
+
+        console.error("Erro ao excluir álbum:", erro);
+
+    }
+}
+
+function limparFormulario() {
+
+    const formulario =
+        document.getElementById("formCadastro");
+
+    if (!formulario) return;
+
+    formulario.reset();
+
+    document.getElementById("albumId").value = "";
+
+    document.getElementById(
+        "tituloFormulario"
+    ).textContent = "Cadastrar Álbum";
+}

@@ -202,7 +202,7 @@ footer a {
     transition: 0.2s;
 }
 
-
+/* DETALHES.HTML */
 .cardDetalhes{
     background-color: rgba(118, 105, 105, 0.662);
     border-radius: 5px;
@@ -230,4 +230,39 @@ footer a {
     padding: 20px;
     margin: 20px;
     width:fit-content;
+}
+
+/* CADASTRO_ALBUM.HTML */
+.cardCrud{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 12px;
+}
+
+.tabelaCrud{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabelaCrud th{
+    background-color: #938383;
+    color: white;
+}
+
+.tabelaCrud td,
+.tabelaCrud th{
+    vertical-align: middle;
+}
+
+.btn-editar{
+    background-color: #938383;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn-excluir{
+    background-color: #6b5b5b;
+    color: white;
+    border: none;
 }
